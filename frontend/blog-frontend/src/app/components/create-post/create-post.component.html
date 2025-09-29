@@ -1,0 +1,9 @@
+<form (ngSubmit)="submit()" class="create-post-form">
+  <div class="form-group" style="margin-bottom: 20px; width: 100%; padding: 20px;">
+    <input [(ngModel)]="title" name="title" placeholder="Title" required>
+  </div>
+  <div class="form-group" style="width: 100%; padding: 20px;">
+    <textarea [(ngModel)]="body" name="body" placeholder="Body" required></textarea>
+  </div>
+  <button type="submit" style="margin-left: 50px; margin-top: 10px; padding: 15px; text-align: center;">Create</button>
+</form>

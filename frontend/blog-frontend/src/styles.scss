@@ -1,0 +1,56 @@
+/* ===== Global Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  padding: 0;
+  color: #2d3748;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.app-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* ===== Header ===== */
+.app-header {
+  text-align: center;
+  margin-bottom: 40px;
+
+  .logo {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #fff;
+    text-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+
+    span {
+      margin-left: 12px;
+      font-size: 2.5rem;
+      vertical-align: middle;
+    }
+  }
+}
+
+.divider {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+  margin: 50px 0;
+}
+
+/* ===== Layout ===== */
+.app-main {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}

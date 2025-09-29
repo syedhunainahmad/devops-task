@@ -1,0 +1,9 @@
+<div class="post-container">
+  <div *ngIf="posts.length === 0">No posts yet.</div>
+
+  <div *ngFor="let post of posts" class="post-card">
+    <h3>{{ post.title }}</h3>
+    <p>{{ post.body }}</p>
+    <small>{{ post.createdAt | date:'medium' }}</small>
+  </div>
+</div>
